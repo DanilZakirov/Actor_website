@@ -1,0 +1,85 @@
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 50px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#32CD32;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1.25em 0;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 2px solid #FF7F50;
+}
+.home {
+  width: 10vw;
+  max-height: 10hv;
+  position: relative;
+}
+.home_video {
+  padding-bottom: 56.25%;
+}
+.home video{
+  position: relative;
+  height: 450px;
+  width: 320%;
+  left: 470px;
+  top: -637px;
+  bottom: 0;
+  padding: 100;
+}
+.home video:hover {
+  border: 10px solid #FF7F50;
+}
+.home video {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
